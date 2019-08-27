@@ -83,12 +83,12 @@ vertical-align:bottom;
 	height: 599px;
 	width: 809px;
 	
-
+position: absolute;
 	overflow: hidden;
 	display:block;
 	 
 	/*transform: translate(-50%, -50%);
-	position: absolute; 
+	 
 	top: 50%; 
 	left: 50%;*/
 	
