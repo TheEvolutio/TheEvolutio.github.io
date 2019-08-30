@@ -61,9 +61,9 @@ vertical-align:bottom;
 }
 
 .Skins.limb{
-	padding-left: 13px;
-	padding-top: 10px;
-	height: 80px;
+	padding-left: 7px;
+	padding-top: 7px;
+	height: 88px;
 	
 }
 
@@ -81,14 +81,14 @@ vertical-align:bottom;
 #Game {
 	
 	height: 599px;
-	width: 809px;
+	width: 807px;
+	position: absolute; 
 	
-
 	overflow: hidden;
 	display:block;
 	 
 	/*transform: translate(-50%, -50%);
-	position: absolute; 
+	
 	top: 50%; 
 	left: 50%;*/
 	
@@ -383,31 +383,37 @@ body{background:black;}
 	width: 24px;
 }
 
-#Vits1{
+.VitsC.Vits1{
 	margin-left: 554px;
 }
+.VitsC.s1{
+	border: 0px solid blue;
+	z-index: 1;
+	border-radius: 30px;
+	cursor: pointer;
+}
 
-#Vits2{
+.VitsC.Vits2{
 	margin-left: 588px;
 }
 
-#Vits3{
+.VitsC.Vits3{
 	margin-left: 622px;
 }
 
-#Vits4{
+.VitsC.Vits4{
 	margin-left: 674px;
 }
 
-#Vits5{
+.VitsC.Vits5{
 	margin-left: 708px;
 }
 
-#Vits6{
+.VitsC.Vits6{
 	margin-left: 742px;
 }
 
-#Vits7{
+.VitsC.Vits7{
 	margin-left: 776px;
 }
 

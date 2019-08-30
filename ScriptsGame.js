@@ -1,22 +1,22 @@
 (function () {
     'use strict';
-
+var aF = 1;
     var boxElem = document.getElementById('box1');
     var pointerElem = document.getElementById('pointer1');
 		
 				var triangle = document.getElementById('pointer1');
 				var Game = document.getElementById('Game');
 					function getTriangleCenter() {
-						var x = Game.offsetLeft/2.455;
-						var y = Game.offsetTop/11;
-						x = x+triangle.offsetLeft + 35; // (50 + 50) / 2
-						y = y+triangle.offsetTop + 35; // 130 / 2
+						//var x = Game.offsetLeft/2.455;
+						//var y = Game.offsetTop/11;
+						x = triangle.offsetLeft + 35; // (50 + 50) / 2
+						y = triangle.offsetTop + 35; // 130 / 2
 						return {
 							x: x,
 							y: y
 						};
 					}
-					boxElem.addEventListener('mousemove', function(e) {
+					boxElem.addEventListener('click', function(e) {
 						var triangleCenter = getTriangleCenter();
 						var angle = Math.atan2(e.clientX - triangleCenter.x, -(e.clientY - triangleCenter.y)) * (180 / Math.PI) + 45;
 						
@@ -40,8 +40,15 @@
 			
         requestAnimationFrame(function movePointer() {
             if (activePointer) {        
-				pointerElem.style.left = Math.floor(mouseX) -35+ 'px';
+				pointerElem.style.left = Math.floor(mouseX) -35+'px';
                 pointerElem.style.top = Math.floor(mouseY) -35+ 'px';
+					
+				document.getElementById('an1').beginElement();
+				
+				
+				
+				//function an1st(){
+				//document.getElementById('an1').beginElement();
 				
 					//--------------------------------------------------------
 					
